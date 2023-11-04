@@ -1,0 +1,168 @@
+{
+  "home_assistant": {
+    "installation_type": "Home Assistant OS",
+    "version": "2023.11.0",
+    "dev": false,
+    "hassio": true,
+    "virtualenv": false,
+    "python_version": "3.11.6",
+    "docker": true,
+    "arch": "aarch64",
+    "timezone": "Europe/Stockholm",
+    "os_name": "Linux",
+    "os_version": "6.1.21-v8",
+    "supervisor": "2023.10.1",
+    "host_os": "Home Assistant OS 11.1",
+    "docker_version": "24.0.6",
+    "chassis": "embedded",
+    "run_as_root": true
+  },
+  "custom_components": {
+    "hacs": {
+      "version": "1.33.0",
+      "requirements": [
+        "aiogithubapi>=22.10.1"
+      ]
+    }
+  },
+  "integration_manifest": {
+    "domain": "github",
+    "name": "GitHub",
+    "codeowners": [
+      "@timmo001",
+      "@ludeeus"
+    ],
+    "config_flow": true,
+    "documentation": "https://www.home-assistant.io/integrations/github",
+    "iot_class": "cloud_polling",
+    "loggers": [
+      "aiogithubapi"
+    ],
+    "requirements": [
+      "aiogithubapi==22.10.1"
+    ],
+    "is_built_in": true
+  },
+  "data": {
+    "options": {
+      "repositories": [
+        "home-assistant/core"
+      ]
+    },
+    "rate_limit": {
+      "resources": {
+        "core": {
+          "limit": 5000,
+          "used": 32,
+          "remaining": 4968,
+          "reset": 1699110344
+        },
+        "search": {
+          "limit": 30,
+          "used": 0,
+          "remaining": 30,
+          "reset": 1699108982
+        },
+        "graphql": {
+          "limit": 5000,
+          "used": 5,
+          "remaining": 4995,
+          "reset": 1699112187
+        },
+        "integration_manifest": {
+          "limit": 5000,
+          "used": 0,
+          "remaining": 5000,
+          "reset": 1699112522
+        },
+        "source_import": {
+          "limit": 100,
+          "used": 0,
+          "remaining": 100,
+          "reset": 1699108982
+        },
+        "code_scanning_upload": {
+          "limit": 1000,
+          "used": 0,
+          "remaining": 1000,
+          "reset": 1699112522
+        },
+        "actions_runner_registration": {
+          "limit": 10000,
+          "used": 0,
+          "remaining": 10000,
+          "reset": 1699112522
+        },
+        "scim": {
+          "limit": 15000,
+          "used": 0,
+          "remaining": 15000,
+          "reset": 1699112522
+        }
+      },
+      "rate": {
+        "limit": 5000,
+        "used": 32,
+        "remaining": 4968,
+        "reset": 1699110344
+      }
+    },
+    "repositories": {
+      "home-assistant/core": {
+        "default_branch_ref": {
+          "commit": {
+            "message": "Set suggested display precision for HomeWizard Energy power sensors (\u2026",
+            "url": "https://github.com/home-assistant/core/commit/07f03d9ec93d0a37be6566530a0c0ca67b5f33d8",
+            "sha": "07f03d9ec93d0a37be6566530a0c0ca67b5f33d8"
+          }
+        },
+        "stargazers_count": 63855,
+        "forks_count": 25421,
+        "full_name": "home-assistant/core",
+        "id": 12888993,
+        "watchers": {
+          "total": 1359
+        },
+        "discussion": {
+          "total": 0,
+          "discussions": []
+        },
+        "issue": {
+          "total": 2101,
+          "issues": [
+            {
+              "title": "Lost Reolink camera",
+              "url": "https://github.com/home-assistant/core/issues/103375",
+              "number": 103375
+            }
+          ]
+        },
+        "pull_request": {
+          "total": 500,
+          "pull_requests": [
+            {
+              "title": "Address late review for blink",
+              "url": "https://github.com/home-assistant/core/pull/103376",
+              "number": 103376
+            }
+          ]
+        },
+        "release": {
+          "name": "2023.11.1",
+          "url": "https://github.com/home-assistant/core/releases/tag/2023.11.1",
+          "tag": "2023.11.1"
+        },
+        "refs": {
+          "tags": [
+            {
+              "name": "2023.11.1",
+              "target": {
+                "url": "https://github.com/home-assistant/core/commit/ce12d8262475363bb43bf747d12c8608dfb2d91c"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
